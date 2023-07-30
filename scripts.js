@@ -116,35 +116,35 @@
 //   attackGoblin(fighter, goblin);
 
 
-var maxHealth = 100;
-var health = maxHealth;
-var healthBar = document.getElementById("health");
+// var maxHealth = 100;
+// var health = maxHealth;
+// var healthBar = document.getElementById("health");
 
-function decreaseHealth() {
-health -= 10;
-if (health < 0) {
-    health = 0;
-}
-updateHealthBar();
+// function decreaseHealth() {
+// health -= 10;
+// if (health < 0) {
+//     health = 0;
+// }
+// updateHealthBar();
 
-if (health === 0) {
-    alert("The monster is dead you may now proceed forward");
-}
-}
+// if (health === 0) {
+//     alert("The monster is dead you may now proceed forward");
+// }
+// }
 
 
-function updateHealthBar() {
-var healthPercentage = (health / maxHealth) * 100;
-healthBar.style.width = healthPercentage + "%";
+// function updateHealthBar() {
+// var healthPercentage = (health / maxHealth) * 100;
+// healthBar.style.width = healthPercentage + "%";
 
-if (healthPercentage <= 25) {
-    healthBar.style.backgroundColor = "red";
-} else if (healthPercentage <= 50) {
-    healthBar.style.backgroundColor = "yellow";
-} else {
-    healthBar.style.backgroundColor = "green";
-}
- }
+// if (healthPercentage <= 25) {
+//     healthBar.style.backgroundColor = "red";
+// } else if (healthPercentage <= 50) {
+//     healthBar.style.backgroundColor = "yellow";
+// } else {
+//     healthBar.style.backgroundColor = "green";
+// }
+//  }
 
 
 
