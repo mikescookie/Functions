@@ -147,4 +147,76 @@
 //  }
 
 
+let firstName = "Michael";
+let lastName = "Cook";
 
+let fullName = firstName +" " + lastName
+
+console.log(fullName)
+
+
+
+
+let tip = "8.50";
+let total = 40;
+let tax = 0;
+ 
+let orderTotal = parseFloat(tip) + tax + total;
+
+console.log(orderTotal)
+
+let Michael = {
+    hair: "blonde",
+    skin: "white",
+    eyes: "blue",
+    age: 24,
+    isFun: true
+}
+console.log(Michael.eyes)
+
+
+// let x =+ 1;
+// console.log(x)
+
+
+// num = 19;
+// result = num % 1 === 0 ? 'even' : 'odd';
+// console.log(`The number is ${result}`);
+
+
+// const dt = new Date();
+// const month = dt.getMonth();
+
+// let msg;
+// switch (month) {
+//     case 0:
+//         msg = 'January 4 is National Spaghetti Day!';
+//         break
+//     case 1:
+//         msg = "February 9 is National Pizza Day!";
+//         break
+//     case 2:
+//         msg = "March 18th is my birthday!!";
+//         break
+//     case 3:
+//         msg = "April 26 is National Pretzel Day!!!"
+//         break
+//     default:
+//         msg = "No Holidays this month :(";
+// }
+// const el = document.getElementById('message');
+// el.innerHTML = msg
+
+
+let guessNumber = 0;
+
+let numberToGuess = 71;
+let guess;
+
+do {
+    guess = Math.floor(Math.random()*100);
+    guessNumber++;
+} while (guess != numberToGuess)
+
+document.getElementById('root').innerHTML = `<h2> I guessed it!</h2>
+<p> It only took me ${guessNumber} guesses!</p>`;
